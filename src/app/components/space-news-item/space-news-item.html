@@ -1,0 +1,16 @@
+@if (news()) {
+<article class="e-article">
+  <div class="e-article__cover">
+    <img [src]="news()?.image_url" />
+    <div class="e-article__date">
+      <div class="e-article__month">{{ news()?.published_at | date: 'LLL' }}</div>
+      <div class="e-article__day">{{ news()?.published_at | date: 'dd' }}</div>
+    </div>
+  </div>
+  <div class="e-article__content">
+    <h3 class="e-article__title">{{ news()?.title }}</h3>
+    <p class="e-article__summary">{{ news()?.summary }}</p>
+    <p class="e-article__site">on <a [href]="news()?.url">{{ news()?.newsSite }}</a></p>
+  </div>
+</article>
+}

@@ -1,0 +1,5 @@
+@if (newsList().length > 0) { @for (item of newsList(); track $index) {
+<app-space-news-item [news]="item"></app-space-news-item>
+} } @else {
+<div>Loading list...</div>
+}
