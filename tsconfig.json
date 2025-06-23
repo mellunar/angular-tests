@@ -17,7 +17,8 @@
     "baseUrl": "./src",
     "paths": {
       "$*": ["./*"]
-    }
+    },
+    "types": ["./worker-configuration.d.ts"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
